@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-brand-offwhite text-neutral-900; }
+.card { @apply bg-white rounded-xl shadow p-6; }
+.btn { @apply px-4 py-2 rounded-lg border font-medium; }
+.btn-primary { @apply bg-brand-purple text-white border-brand-purple; }
+.btn-secondary { @apply bg-brand-gold text-black border-brand-gold; }

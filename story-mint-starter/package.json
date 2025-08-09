@@ -1,0 +1,39 @@
+{
+  "name": "story-mint",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "deploy:contract": "hardhat run scripts/deploy.ts --network polygon_amoy",
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.51.16",
+    "next": "14.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "viem": "2.9.32",
+    "wagmi": "2.12.25",
+    "zustand": "4.5.5",
+    "web3.storage": "4.5.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "@types/node": "20.12.12",
+    "@types/react": "18.2.66",
+    "autoprefixer": "10.4.19",
+    "dotenv": "16.4.5",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "hardhat": "2.22.7",
+    "postcss": "8.4.38",
+    "tailwindcss": "3.4.9",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.4",
+    "@openzeppelin/contracts": "4.9.6"
+  }
+}

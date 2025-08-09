@@ -1,0 +1,7 @@
+name: nightly-story-mint
+schedule: "0 21 * * *" # daily at 21:00
+checks:
+  - name: api-ipfs-responds
+    run: curl -s -X POST http://localhost:3000/api/ipfs -H "Content-Type: application/json" -d '{"name":"Ping","description":"Test"}' | jq -r '.tokenUri' | grep -q 'data:'
+  - name: contract-abi-present
+    run: test -f abi/StoryMint.json
